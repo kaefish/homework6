@@ -46,7 +46,6 @@ document.querySelector("#skip").addEventListener("click", function() {
 });
 
 document.querySelector("#mute").addEventListener("click", function() {
-	console.log("Mute");
 	if (video.muted == false){
 		video.muted = true;
 		let mute = document.querySelector("#mute").innerHTML = "Unmute";
@@ -58,12 +57,10 @@ document.querySelector("#mute").addEventListener("click", function() {
 });
 
 document.querySelector("#old").addEventListener("click", function() {
-	console.log("Grayscale");
 	document.getElementById("myVideo").className = "oldTime";
 });
 
 document.querySelector("#original").addEventListener("click", function() {
-	console.log("Original");
 	document.getElementById("myVideo").className = "";
 });
 
